@@ -1,0 +1,64 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+}
+main{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15%;
+}
+
+.galeria input {
+    display: none;
+}
+
+.galeria {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.galeria li {
+    list-style: none;
+    position: absolute;
+}
+
+.galeria img {
+    float:left;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    opacity: 0;
+    visibility: hidden;
+}
+.galeria label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.galeria li:nth-child(1) label {
+    left: 10px;
+}
+
+.galeria li:nth-child(2) label {
+    left: 40px;
+}
+
+.galeria li:nth-child(3) label {
+    left: 70px;
+}
+.galeria li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
