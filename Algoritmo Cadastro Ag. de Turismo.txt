@@ -1,0 +1,51 @@
+Algoritmo "Cadastro"
+var
+nome, gen, mae, pai, log, bairro, cid, estd, destino, email: vetor[1..5] de caractere
+num, cep, DN, DI, DV, contato: vetor [1..5] de inteiro
+i:inteiro
+
+Inicio
+
+Para i de 1 a 100 faca
+    Escreval ("Cadastro do Cliente")
+    Escreva ("nome:")
+    leia (nome[i])
+    Escreva ("Data de Nascimento:")
+    leia (DN[i])
+    Escreva ("Genero:")
+    leia (gen[i])
+    Escreval ("Nome da mãe:")
+    leia (mae[i])
+    Escreva ("Nome do pai:")
+    leia (pai[i])
+    Escreva ("Logadouro:")
+    leia (log[i])
+    Escreva ("Numero:")
+    leia (num[i])
+    Escreva ("Bairro:")
+    leia (bairro[i])
+    Escreva ("CEP:")
+    leia (cep[i])
+    Escreva ("Cidade:")
+    leia (cid[i])
+    Escreva ("Estado:")
+    leia (estd[i])
+    Escreva ("Email:")
+    leia (email[i])
+    Escreva ("Contato:")
+    leia (contato[i])
+    Escreval ("Cadastro Destino")
+    Escreva ("Destino do Cliente:")
+    leia (destino[i])
+    Escreva ("Qual data de ida:")
+    leia (DI[i])
+    Escreva ("Qual data de volta:")
+    leia (DV[i])
+fimpara
+Escreval("Consulta de cadastro")
+Escreva("Digite o email do cadastro do usuario: ")
+leia (pesquisa)
+  se (pesquisa == email[i]) entao
+    Escreva(vetor[i])
+fimse
+fimalgoritmo
